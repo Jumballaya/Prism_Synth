@@ -169,7 +169,7 @@ void Synth::stop() {
 }
 
 uint8_t Synth::step(uint16_t count) {
-	return (samples[count]) * (envelope.getAmplitude()) * (volume / MAX_VOLUME);
+    return (samples[count]) * (envelope.getAmplitude()) * (volume / MAX_VOLUME);
 }
 
 void Synth::loop() {
@@ -188,9 +188,9 @@ void Synth::setWave(uint8_t wav) {
 // Interrupt
 // Output the sound on OCR2A
 ISR(TIMER2_OVF_vect) {
-	static uint16_t count = 0;
+    static uint16_t count = 0;
     
-	OCR2A = synth->step(count);
+    OCR2A = synth->step(count);
 
     timer += 16;
     if (count < synth->nSamples - 1) {
