@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/opt/arduino-1.8.13/hardware/arduino/avr/**",
+                "/opt/arduino-1.8.13/tools/**",
+                "/opt/arduino-1.8.13/hardware/tools/avr/**",
+                "~/Arduino/libraries/**",
+                "/home/patrick/Documents/projects/arduino/sound_engine/**"
+            ],
+            "forcedInclude": [
+                "/opt/arduino-1.8.13/hardware/arduino/avr/cores/arduino/Arduino.h"            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
